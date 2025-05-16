@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .dynamic-section {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dynamic DOM Manipulation Demo</h1>
+    </header>
+    <main>
+        <section id="text-section" class="dynamic-section">
+            <p id="dynamic-text">This is the initial text. Click the button to change it!</p>
+            <button onclick="changeText()">Change Text</button>
+        </section>
+        <section id="style-section" class="dynamic-section">
+            <h2>Style Toggle Section</h2>
+            <p>This section's styles can be toggled.</p>
+            <button onclick="toggleStyles()">Toggle Styles</button>
+        </section>
+        <section id="list-section" class="dynamic-section">
+            <h2>Dynamic List</h2>
+            <ul id="item-list">
+                <li>mango</li>
+                <li>Apple</li>
+            </ul>
+            <button onclick="addItem()">Add Item</button>
+            <button onclick="removeItem()">Remove Item</button>
+            which one do you want
+        </section>
+    </main>
+    <footer>
+        <p>web dev Assignment - May 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
